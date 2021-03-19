@@ -1,14 +1,15 @@
-//
-//  main.cpp
-//  AbstractСlass
-//
-//  Created by Михаил Воронин on 19.03.2021.
-//
-
 #include <iostream>
+#include "MyClasses.h"
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+    Cat cat("Li", 10);
+    Dog dog("Bob", 1);
+    
+    cat.saySomething();
+    dog.saySomething();
+    
+    Dog* dog_ptr = new Dog("Tit", 10);
+    
+    EntityArray::print(dog_ptr, 1);
     return 0;
 }
